@@ -14,19 +14,23 @@
         <h1>AI Womanhood Poem Genrator</h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Suggest a topic for poems about womanhood"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem">Poem will be here</div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Suggest a topic for poems about womanhood"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Love, Heels or Purse</div>
+        </div>
+
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by Kenya Johnson and is
