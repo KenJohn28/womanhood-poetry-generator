@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -12,20 +13,20 @@
       <header>
         <h1>AI Womanhood Poem Genrator</h1>
       </header>
-
       <main>
         <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter any topic about womanhood poems"
+            placeholder="Suggest a topic for poems about womanhood"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem" id="poem">The Poem will go here</div>
+        <div class="poem" id="poem">Poem will be here</div>
       </main>
       <footer>
         This AI project was coded by Kenya Johnson and is
